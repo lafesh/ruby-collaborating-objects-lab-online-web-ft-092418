@@ -18,7 +18,7 @@ class Artist
   end 
   
   def save
-    @@all << self #why???
+    @@all << self 
   end 
   
   def self.create_artist_by_name(name)
