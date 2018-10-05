@@ -8,8 +8,8 @@ class MP3Importer
   end 
   
   def files
-    @files << self.path
-    @files
+    binding.pry
+    
   end 
   
   def import 
