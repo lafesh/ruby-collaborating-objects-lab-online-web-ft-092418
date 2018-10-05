@@ -16,6 +16,7 @@ class Song
     #song = MP3Importer.new.song_name
     song = Song.new(song_name)
     song = song.Artist.new(artist_name)
+    binding.pry
     song
   end 
   
