@@ -7,14 +7,15 @@ class Song
   end 
   
   def artist_name=(artist_name)
-    Artist.find_or_create_by_name(artist_name)
+    self.artist = Artist.find_or_create_by_name(artist_name)
+    artist.add_song(self)
   end 
   
   def self.new_by_filename(file_name)
     artist_name, song_name, genre = file_name.split(" - ")
     #self.new_by_name(song_name).tap{|song| song.artist_name = artist_name}
     song = self.new(song_name)
-    song = song.artist_name = artist_name
+    song.artist_name = artist_name
     song
   end 
   
