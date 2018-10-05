@@ -14,8 +14,8 @@ class Song
     artist_name, song_name, genre = file_name.split(" - ")
     #self.new_by_name(song_name).tap{|song| song.artist_name = artist_name}
     #song = MP3Importer.new.song_name
-    song = Song.new(song_name)
-    song
+    song = Song.new(song_name).tap{|song|song.artist_name = artist_name}
+    
   end 
   
   
