@@ -10,7 +10,7 @@ class MP3Importer
   def files
     
     file_array = Dir.glob(self.path + "/*.mp3")
-    binding.pry
+    file_array.collect {|file| file.gsub(self.path + "/", "")}
   end 
   
   def import 
