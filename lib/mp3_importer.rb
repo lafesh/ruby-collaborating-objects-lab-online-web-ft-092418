@@ -8,9 +8,9 @@ class MP3Importer
   end 
   
   def files
-    binding.pry
-    file_array = Dir.glob(self.path + "/*.mp3")
     
+    file_array = Dir.glob(self.path + "/*.mp3")
+    binding.pry
   end 
   
   def import 
