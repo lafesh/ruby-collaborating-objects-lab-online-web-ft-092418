@@ -15,8 +15,8 @@ class Song
     #self.new_by_name(song_name).tap{|song| song.artist_name = artist_name}
     #song = MP3Importer.new.song_name
     song = Song.new(song_name)
-    song = song.Artist.new(artist_name)
     binding.pry
+    song = song.Artist.new(artist_name)
     song
   end 
   
