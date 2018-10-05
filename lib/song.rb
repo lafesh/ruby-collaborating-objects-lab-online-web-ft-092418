@@ -15,7 +15,7 @@ class Song
     #self.new_by_name(song_name).tap{|song| song.artist_name = artist_name}
     #song = self.new(song_name)
     song = Song.new(song_name)
-    
+    song = song.new(artist_name)
     song
   end 
   
