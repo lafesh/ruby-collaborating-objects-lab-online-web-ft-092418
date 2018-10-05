@@ -14,7 +14,7 @@ class Song
     artist_name, song_name, genre = file_name.split(" - ")
     #self.new_by_name(song_name).tap{|song| song.artist_name = artist_name}
     song = self.new(song_name)
-    song = song.Artist.new(artist_name)
+    song = song.artist.new(artist_name)
     #tap{|song| song.artist_name = artist_name}
     song
   end 
