@@ -9,7 +9,8 @@ class MP3Importer
   
   def files
     binding.pry
-    Dir.glob(self.path + "/something.mp3")
+    file_array = Dir.glob(self.path + "/*.mp3")
+    
   end 
   
   def import 
