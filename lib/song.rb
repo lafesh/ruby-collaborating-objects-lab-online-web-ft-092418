@@ -6,6 +6,10 @@ class Song
     self.name = name 
   end 
   
+  def artist_name=(artist_name)
+    
+  end 
+  
   def self.new_by_filename(file_name)
     artist_name, song_name, genre = file_name.split(" - ")
     #self.new_by_name(song_name).tap{|song| song.artist_name = artist_name}
