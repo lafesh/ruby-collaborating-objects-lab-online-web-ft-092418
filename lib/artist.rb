@@ -42,7 +42,6 @@ class Artist
   end 
   
   def print_songs
-    if artist.name
-    print @songs.songs
+    print @songs
   end 
 end 
